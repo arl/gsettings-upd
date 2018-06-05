@@ -1,0 +1,14 @@
+[Unit]
+Description=GSettings update daemon
+
+[Service]
+Type=notify
+NotifyAccess=main
+ExecStart=/usr/bin/gsettings-upd
+WatchdogSec=10
+Restart=on-failure
+Environment="GSETTINGS_UPD_CONFIG=%h/.config/gsettings-upd/config.json"
+
+
+[Install]
+WantedBy=default.target
