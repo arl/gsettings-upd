@@ -1,4 +1,5 @@
-# gsettings-upd: A systemd service to update gsettings values.
+# gsettings-upd
+## a `systemd` service that updates `gsettings` values.
 
 Nearly everything in Gnome is configurable via gsettings. You can list all the
 values managed by gsettings with:
