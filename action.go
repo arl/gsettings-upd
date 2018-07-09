@@ -37,7 +37,7 @@ type Action struct {
 	Schema string     // Schema is the targeted gsettings schema.
 	Key    string     // Key is the key modified.
 	Every  Duration   // Every is the period at which the key is updated.
-	Random bool       // Random indicates wether the new valus is chosen randomly.
+	Random bool       // Random indicates wether the next is randomly chosen.
 	Values []string   // Values is the set of values from which next value if chosen.
 	rng    *rand.Rand // rng will be lazily created if Random is true.
 }
